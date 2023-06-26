@@ -1,4 +1,4 @@
-# 90% to completion:
+# 97% to completion:
 
 
 import random
@@ -9,7 +9,7 @@ name = str(input("Enter your name: "))
 
 num = [0, 1, 2, 3, 4, 5, 6]
 
-#chances = 2
+
 
 
 
@@ -21,8 +21,9 @@ rounds = int(input('Number of rounds: '))
 while True:
     #misses == 0
 
-            
+            print('')
             player = int(input('Choose a number between 1 and 6 (0 to quit) : ')) #ValueError: invalid literal for int() with base 10
+            
             if player not in num:
                 continue
             if player == 0:
@@ -63,6 +64,10 @@ while True:
             elif player == 3 and bot == 1:
                 print(f'{name}:{player}, Bot: {bot}. You lost this round')
                 bot_ans += 1
+                
+            elif player == 1 and bot == 3:
+                print(f'{name}:{player}, Bot: {bot}. You won this round')
+                human_ans += 1
 
 
             else:
@@ -86,7 +91,7 @@ else:
     elif bot_ans > human_ans:
         print('You Lost!')
     else:
-        print('Its a draw')
+        print('Its A Draw')
 
 print(f'You: {human_ans}')
 print(f'Bot: {bot_ans}')
