@@ -4,9 +4,9 @@ This is a simple game i came up with, its somewhat like a guessing game but with
 
 the rules:
 
--- if your num = bots num, you lose the round
+-- if your number = bot's number, you lose the round
 
--- if your number is divisible by the bots, you lose (and vise verse)
+-- if your number is divisible by the bot's, you lose (and vise verse)
 
 -- if your number is 5 and bot's number is 3, you lose (and vise verse)
 
